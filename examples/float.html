@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float maremma</title>
+    <style>
+
+        body:last-child{
+            margin-bottom: 0;
+        }
+        body{
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .centered{
+            max-width: 1080px;
+            margin: 0 auto;
+            background-color: red;
+            padding: 10px;
+        }
+
+        /*content-box*/
+        .container-content-box{
+            max-width: 1080px;
+            margin: 0 auto;
+            padding-bottom: 5px;
+        }
+        .centered > .float-elements:first-child{
+            margin-right: 10px;
+        }
+        .float-elements{
+            float: left;
+            border: 5px solid #000;
+            padding: 15px;
+            height: 400px;
+        }
+
+        /*devo togliere dalla misura percentuale padding e bordi*/
+        .container-content-box > .float-elements{
+            box-sizing: content-box;
+        }
+        .container-content-box .main-content{
+            width: calc(70% - 10px - (10px * 2) - (5px * 2));
+            background-color: cornflowerblue;
+        }
+        .container-content-box .sidebar{
+            width: calc(30% - (10px * 2) - (5px * 2));
+            background-color: green;
+        }
+        .clearfix{
+            clear: both;
+        }
+
+        /*border-box calcolo solo il margine*/
+        .container-border-box > .float-elements{
+            box-sizing: border-box;
+        }
+        .container-border-box .main-content{
+            width: calc(70% - 10px);
+            background-color: cornflowerblue;
+        }
+        .container-border-box .sidebar{
+            width: calc(30%);
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="container-content-box centered">
+    <div class="main-content float-elements">
+        main content
+    </div>
+    <div class="sidebar  float-elements">
+        side bar
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="container-border-box centered">
+    <div class="main-content float-elements">
+        main content
+    </div>
+    <div class="sidebar  float-elements">
+        side bar
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>
