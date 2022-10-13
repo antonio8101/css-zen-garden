@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@0;1&family=Roboto:wght@100&family=Zen+Loop:ital@0;1&display=swap');
+@import "header.css";
+@import "main.css";
+
+:root{
+    --lightest-color: #D9D4D2;
+    --light-color: #BFB2AA;
+    --medium-color: #A69792;
+    --medium-dark-color: #727272;
+    --dark-color: #404040;
+
+    --margin-left-section: 6em;
+    --right-fix: calc(var(--margin-left-section) / 10);
+    --closing-padding-bottom: 2em;
+}
+
+/* GENERIC RULES */
+
+body{
+    font-family: "Fira Sans", sans-serif;
+    background: var(--dark-color);
+    color: var(--dark-color);
+    padding: unset;
+    margin: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-color);
+    text-shadow: 2px 0 5px var(--medium-dark-color);
+    border-bottom: solid 3px var(--medium-color);
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+/* ABBR items */
+abbr:not(header abbr) {
+    font-family: "Zen Loop", cursive;
+    text-transform: lowercase;
+    text-decoration: unset;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--dark-color);
+}
+
+/* LINKs */
+a:link {
+    color: var(--light-color);
+    text-decoration: none;
+}
+a:hover{
+    color: #A69792;
+    text-decoration: underline;
+}
+a:active{
+    color: red;
+}
+a:visited{
+    text-decoration: underline !important;
+    color: #D9D4D2;
+}
+
+/*!* PAGE Wrapper *!*/
+.page-wrapper {
+    font-size: 1.2rem;
+    max-width: 1020px;
+    min-width: 555px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+

@@ -1,0 +1,27 @@
+/* last content div padding bottom */
+.main > div:nth-last-child(2){
+    border-radius: 0 0 2em 0;
+    margin-bottom: 10px;
+}
+
+.main div{
+    margin-top: -20px;
+    margin-left: 0;
+}
+
+div h3 {
+    font-family: "Zen Loop", cursive;
+    font-size: 3em;
+    margin-bottom: .1em;
+}
+
+/* custom
+/* first letter of each p after h3 */
+.main h3 + p::first-letter {
+    text-transform: capitalize;
+    font-family: "Zen Loop", cursive;
+    font-style: italic;
+    color: var(--dark-color);
+    font-size: 3.6em;
+    margin: 0 5px 5px 0;
+}

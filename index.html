@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>CSS Zen Garden: The Beauty of CSS Design</title>
-
-    <link rel="stylesheet" media="screen" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,15 +52,18 @@
 
     <section class="intro" id="zen-intro">
         <header role="banner">
-            <h1>CSS Zen Garden</h1>
+            <h1 id="title">CSS Zen Garden</h1>
             <h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
         </header>
 
         <div class="summary" id="zen-summary" role="article">
             <p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based
                 design. Select any style sheet from the list to load it into this page.</p>
-            <p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html
-                file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css
+            <p>Download the example
+<!--                my target-->
+                <a href="#" title="This page's source HTML code, not to be modified." id="zen-link" class="myLink">html file</a>
+<!--                my target-->
+                and <a href="#" title="This page's sample CSS, the file you may modify.">css
                 file</a></p>
         </div>
 
@@ -157,6 +159,8 @@
         <footer>
             <a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML"
                class="zen-validate-html">HTML</a>
+            <a href="https://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML"
+               class="zen-validate-html">HTML (NON LO VOGLIO)</a>
             <a href="http://jigsaw.w3.org/css-validator/check/referer"
                title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
             <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"

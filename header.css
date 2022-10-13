@@ -1,0 +1,83 @@
+/* HEADER CONTAINER */
+section{
+    text-align: right;
+}
+
+section > header + div{
+    border-radius: 2em 0 0 0;
+}
+
+section h3 {
+    margin-top: 0;
+    padding: 0;
+}
+
+
+/* HEADER TITLES */
+header h1, header h2{
+    font-family: "Zen Loop", cursive;
+    padding: 0;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+    font-size: 4.5em;
+    line-height: .8em;
+    border: unset;
+    position: absolute;
+    right: 20px;
+}
+
+header h2 {
+    font-family: "Zen Loop", cursive;
+    font-style: italic;
+    font-size: 3em;
+    color: var(--medium-dark-color);
+    text-shadow: 2px 0 5px var(--medium-color);
+}
+
+/* HEADER TITLEs POSITIONING */
+header h1 {
+    bottom: 120px;
+}
+
+header h2 {
+    bottom: 60px;
+}
+
+header abbr {
+    text-decoration: unset;
+    color: black;
+}
+
+header{
+    background: linear-gradient(#D9D4D200, #D9D4D200, var(--medium-dark-color)), linear-gradient(90deg, #D9D4D200, var(--light-color)),  no-repeat url("images/AdobeStock_466959309_Preview.jpeg") 0% -0% / cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: calc(100% - 40px);
+    height: 500px;
+    padding: 20px;
+}
+
+/* FOOTER STUFF PLACED INTO HEADER AREA */
+footer{
+    display: block;
+    position: absolute;
+    top: 505px;
+    right: 40px;
+    z-index: 2;
+}
+
+footer a{
+    display: inline-block;
+    background: black;
+    padding: .2em 1.2em;
+}
+
+footer a:link{
+    color: #D9D4D2;
+}
+
+footer a:nth-child(2){
+    display: none;
+}
